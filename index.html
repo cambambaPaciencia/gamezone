@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game Zone</title>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <h1 class="logo"> <span>Game</span>Zone</h1>
+        
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" class="ctn">Get Started</a></li>
+            <button type="button" id="button" class="" onclick="handleClick()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </ul>
+    </nav>
+    
+    <header>
+        <div class="header-content">
+            <h1>explore videogames world</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore fuga nemo animi cupiditate labore molestias, sunt ullam autem, blanditiis eveniet quo similique voluem quibusdam expedita! consectetur adipisicing elit. Corporis</p>
+        </div>
+    </header>
+
+    <footer>
+        <div class="footer-content">
+
+        </div>
+    </footer>
+
+    <script>
+        const navlinks = document.querySelector('.nav-links');
+        const button = document.getElementById('button');
+
+        button.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        });
+
+        function handleClick(){
+            button.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
